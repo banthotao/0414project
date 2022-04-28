@@ -5,3 +5,38 @@
 
 <h2>HW2</h2>
 
+
+@using (Html.BeginForm("Action", "Controller", FormMethod.Post))
+{
+
+<div>
+    姓名:
+    @Html.TextBox("name")
+</div>
+
+<div>
+    帳號:
+    @Html.TextBox("acc")
+</div>
+<div>
+    密碼:
+    @Html.Password("pwd")
+</div>
+<div>
+    性別:
+    @Html.RadioButton("male", "0") 男性
+    @Html.RadioButton("female", "1") 女性
+</div>
+<div>
+    興趣:
+    @Html.CheckBox("swim") 游泳
+    @Html.CheckBox("read") 閱讀
+    @Html.CheckBox("movie") 看電影
+</div>
+<div>
+    自我介紹:
+    @Html.TextArea("about")
+
+</div>
+}
+
